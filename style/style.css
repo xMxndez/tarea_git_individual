@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ' Segoe UI', sans-serif;
+}
+
+body{
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container{
+    display: flex;
+    gap: 70px;
+    background-color: rgb(24, 24, 24);width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), alpha);
+}
+
+.container img{
+    width: 25%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.container form{
+    width: 50%;
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control label{
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;    
+}
+
+button:hover{
+    background-color: lightgray;
+}
+.modal{
+    display: none;
+}
+
+
+@media screen and (max-width: 920px){
+    .container img{
+        display: none; 
+    }
+
+    .container form {
+        width: 100%;
+    }
+}
